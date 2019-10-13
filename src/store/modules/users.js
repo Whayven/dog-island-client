@@ -16,7 +16,7 @@ const getters = {
 const actions = {
   async login({ commit }, user) {
     await axios
-      .post("api/users/login", user)
+      .post("/api/users/login", user)
       .then(() => {
         router.push("/profile");
       })

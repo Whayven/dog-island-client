@@ -7,7 +7,7 @@
     <form v-on:submit.prevent="login(user)" class="login-form">
       <span>
         Email:
-        <input type="text" name="email" v-model="user.email" />
+        <input type="email" name="email" v-model="user.email" />
         <br />
       </span>
       <br />
@@ -51,7 +51,7 @@ export default {
   width: 100%;
   border-radius: 1px;
   border: 1px solid darkgray;
-  height: 2vh;
+  min-height: 2vh;
 }
 .submit {
   margin-top: 5px;
@@ -59,10 +59,12 @@ export default {
   border: 1px solid rgb(204, 204, 204);
   background: linear-gradient(rgb(255, 255, 255), #dfdbdb);
   font-size: 1em;
+  min-height: 1.1em;
 }
 
 .submit:hover {
   cursor: pointer;
+  background: linear-gradient(rgb(231, 228, 228), #cacaca);
 }
 
 .link {

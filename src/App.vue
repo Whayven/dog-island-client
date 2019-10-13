@@ -3,14 +3,13 @@
     <Navigation />
     <div class="wrapper">
       <router-view/>
-      <footer style="text-align: center">
+    </div>
+    <footer class="footer" style="text-align: center">
       <small>
         Copyright&copy;
         <i>Foster</i>
       </small>
     </footer>
-    </div>
-    
   </div>
 </template>
 
@@ -36,13 +35,15 @@ body {
 }
 
 #app {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
   font-family: 'Raleway', sans-serif;
   width: 100%;
+  height: 100%;
 }
 
 .wrapper {
+  flex: 1 0 auto;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -55,5 +56,9 @@ body {
   margin-bottom: 0;
   border-radius: 2px;
 
+}
+
+.footer {
+  flex-shrink: 0;
 }
 </style>
