@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <h2>Dashboard</h2>
-    <p>Name: {{ user.name }}</p>
+  <div class="wrapper">
+    <h3 class="title">Welcome, {{ user.name }}!</h3>
+    <div class="card">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur architecto quis atque! Consequuntur, accusamus incidunt quibusdam unde quasi porro atque! Voluptate sint unde rem nesciunt libero nobis iure temporibus.</span>
+    </div>
   </div>
 </template>
 
